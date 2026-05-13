@@ -49,11 +49,21 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Hello from flutter'),
+            const Text('Hello from flutter demo app',
+                  style: TextStyle(
+                    color: Colors.indigoAccent,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
+                    wordSpacing: 2,
+                    
+                    ),
+                  ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            
           ],
         ),
       ),

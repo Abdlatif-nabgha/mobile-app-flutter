@@ -1,0 +1,7 @@
+# Hide Flutter platform boilerplate from GitHub language statistics
+ios/** linguist-detectable=false
+android/** linguist-detectable=false
+macos/** linguist-detectable=false
+windows/** linguist-detectable=false
+linux/** linguist-detectable=false
+web/** linguist-detectable=false
