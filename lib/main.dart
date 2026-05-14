@@ -58,7 +58,27 @@ class MyHomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                print("test");
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    backgroundColor: Colors.white,
+                    behavior: SnackBarBehavior.floating,
+                    margin: const EdgeInsets.all(20),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 16
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24)
+                    ),
+                    content: const Text(
+                      "Bievenue de l'application de gestion de syndic",
+                      style: TextStyle(
+                        color: Colors.black
+                      ),
+                    ),
+                    
+                  )
+                )
               }, 
               child: const Text("Continuer")
             )
