@@ -43,35 +43,54 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          padding: EdgeInsets.all(50),
-          decoration: BoxDecoration(
-            color: Colors.amberAccent,
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          padding: EdgeInsets.all(50),
-          decoration: BoxDecoration(
-            color: Colors.red,
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: const Text(
-            'Hello from Paris!',
-            textAlign: TextAlign.center,
-            
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2,
-              wordSpacing: 2,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // First Box
+            Container(
+              height: 100,
+              width: double.infinity,
+              margin: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.amberAccent,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Center(
+                child: Text(
+                  'First Box',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
             ),
-          ),
-          ),
+            
+            // Second Box
+            Container(
+              height: 100,
+              width: double.infinity,
+              margin: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.orange,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Center(
+                child: Text(
+                  'Hello from Paris!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white, // Changed to white so it's visible on a black background
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
+                    wordSpacing: 2,
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
