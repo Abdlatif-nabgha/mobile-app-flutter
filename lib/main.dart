@@ -43,13 +43,13 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             // First Box
             Container(
               height: 100,
-              width: double.infinity,
+              width: 150,
               margin: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 color: Colors.amberAccent,
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // Second Box
             Container(
               height: 100,
-              width: double.infinity,
+              width: 150,
               margin: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 color: Colors.orange,
