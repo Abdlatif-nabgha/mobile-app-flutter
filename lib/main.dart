@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Gestion de syndic",
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
+      theme: AppTheme.lightTheme,
       debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
@@ -56,6 +55,12 @@ class MyHomePage extends StatelessWidget {
                 fontSize: 18,
                 fontWeight: FontWeight.bold
               ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                print("test");
+              }, 
+              child: const Text("Continuer")
             )
           ],
         ),
